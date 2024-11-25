@@ -1,5 +1,7 @@
 import { firebaseAdmin } from "../firebase/firebase.config.js";
 
+import "dotenv/config";
+
 const verifyToken = (req, res, next) => {
   const token = req.headers["authorization"].split(" ")[1];
 
